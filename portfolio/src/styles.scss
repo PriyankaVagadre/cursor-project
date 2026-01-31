@@ -1,0 +1,59 @@
+:root {
+  --bg: #f5f2ed;
+  --surface: #fdfcfa;
+  --border: #e8e4de;
+  --text: #2d2a26;
+  --text-muted: #6b6560;
+  --accent: #c17f59;
+  --accent-hover: #a86a47;
+  --accent-soft: rgba(193, 127, 89, 0.15);
+  --on-accent: #fff;
+  --success: #4a7c59;
+  --card-bg: #fdfcfa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Helvetica Neue', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.5em;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 1.75rem; color: var(--text); }
+h3 { font-size: 1.25rem; }
+
+p {
+  margin: 0 0 1em;
+  color: var(--text-muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+code, .mono {
+  font-family: ui-monospace, 'Cascadia Mono', 'SF Mono', monospace;
+  font-size: 0.9em;
+}

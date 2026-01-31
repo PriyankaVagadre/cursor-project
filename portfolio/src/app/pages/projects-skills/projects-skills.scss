@@ -1,0 +1,269 @@
+:host {
+  display: block;
+}
+
+.projects-skills {
+  padding: 2rem 0;
+}
+
+.projects-skills h1 {
+  margin-bottom: 1.25rem;
+  color: var(--text);
+}
+
+.page-banner-wrap {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.page-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 21 / 8;
+  max-height: 260px;
+}
+
+.section-title {
+  font-size: 1.35rem;
+  margin: 2rem 0 1rem;
+  color: var(--text);
+}
+
+.metrics-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.metric-card {
+  padding: 1.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.metric-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin: 0 0 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.metric-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.metric-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+  line-height: 1.4;
+}
+
+.chart-wrap {
+  margin-top: 0.5rem;
+}
+
+.chart-bar {
+  height: 28px;
+  background: var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.chart-fill {
+  display: block;
+  height: 100%;
+  width: var(--fill, 0%);
+  background: linear-gradient(90deg, var(--accent), var(--accent-hover));
+  border-radius: 8px;
+  transition: width 0.6s ease-out;
+}
+
+.chart-bar--secondary .chart-fill {
+  background: linear-gradient(90deg, var(--success), #5a9a6e);
+}
+
+.chart-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.work-intro {
+  margin: 0 0 1.25rem;
+  max-width: 640px;
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.work-card {
+  padding: 1.25rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.work-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 0.5rem;
+}
+
+.work-card-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0 0 0.75rem;
+  line-height: 1.45;
+}
+
+.work-card .tag {
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-card {
+  padding: 1.25rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.skill-label {
+  display: block;
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-card p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.project-card {
+  padding: 1.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.project-card--with-image {
+  padding: 0;
+  overflow: hidden;
+}
+
+.project-card-image-wrap {
+  width: 100%;
+  aspect-ratio: 21 / 10;
+  overflow: hidden;
+}
+
+.project-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card--with-image:hover .project-card-image {
+  transform: scale(1.02);
+}
+
+.project-card-body {
+  padding: 1.25rem 1.5rem;
+}
+
+.project-card--with-image h3,
+.project-card--with-image p {
+  margin: 0 0 0.5rem;
+}
+
+.project-card--with-image p:last-child {
+  margin-bottom: 0;
+}
+
+.project-card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--text);
+}
+
+.project-subtitle {
+  font-weight: 500;
+  font-size: 0.9em;
+  color: var(--text-muted);
+}
+
+.project-card p {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+}
+
+.project-card p:last-of-type {
+  margin-bottom: 0;
+}
+
+.people-section {
+  max-width: 640px;
+}
+
+.people-section p {
+  margin: 0 0 1rem;
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.people-section p:last-child {
+  margin-bottom: 0;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: 6px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.25rem;
+}

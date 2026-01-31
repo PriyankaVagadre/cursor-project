@@ -1,0 +1,17 @@
+<div class="layout">
+  <header class="header">
+    <a routerLink="/home" class="logo">Portfolio</a>
+    <nav class="nav">
+      <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      <a routerLink="/about" routerLinkActive="active">About</a>
+      <a routerLink="/projects" routerLinkActive="active">Projects &amp; Skills</a>
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    </nav>
+  </header>
+  <main class="main">
+    <router-outlet />
+  </main>
+  <footer class="footer">
+    <p>&copy; {{ currentYear }} Shivendra Shukla Portfolio.</p>
+  </footer>
+</div>
